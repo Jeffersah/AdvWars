@@ -11,6 +11,6 @@ namespace AdvancederWarsV2
     {
         public abstract void Update();
 
-        public abstract void Draw(Spritebatch sb);
+        public abstract void Draw(SpriteBatch sb);
     }
 }

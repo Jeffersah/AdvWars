@@ -20,10 +20,15 @@ namespace AdvancederWarsV2
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        Screen CurrentScreen;
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            graphics.PreferredBackBufferWidth = Globals.SCREEN_SIZE_X;
+            graphics.PreferredBackBufferHeight = Globals.SCREEN_SIZE_Y;
+            Camera.setupCamera(graphics);
         }
 
         /// <summary>
@@ -35,7 +40,7 @@ namespace AdvancederWarsV2
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-
+            CurrentScreen = new InGame();
             base.Initialize();
         }
 
@@ -47,7 +52,8 @@ namespace AdvancederWarsV2
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-
+            TextureManager.loadAllImages(Content);
+            Camera.setupGenericTexture(GraphicsDevice);
             // TODO: use this.Content to load your game content here
         }
 
@@ -71,7 +77,8 @@ namespace AdvancederWarsV2
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
 
-            // TODO: Add your update logic here
+
+            CurrentScreen.Update();
 
             base.Update(gameTime);
         }
@@ -84,7 +91,7 @@ namespace AdvancederWarsV2
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            // TODO: Add your drawing code here
+            CurrentScreen.Draw(spriteBatch);
 
             base.Draw(gameTime);
         }
