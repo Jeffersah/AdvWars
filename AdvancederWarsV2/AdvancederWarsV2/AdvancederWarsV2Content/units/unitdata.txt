@@ -1,0 +1,53 @@
+{
+	movetypes:
+	{
+		type:
+		{
+			name: submarine
+			quickr: sb
+			id: 0
+		}
+		type:
+		{
+			name: navy
+			quickr: nv
+			id: 1
+		}
+		type:
+		{
+			name: infantry
+			quickr: in
+			id: 2
+		}
+		type:
+		{
+			name: tire
+			quickr: ti
+			id: 3
+		}
+		type:
+		{
+			name: tread
+			quickr: tr
+			id: 4
+		}
+		type:
+		{
+			name: lowair
+			quickr: la
+			id: 5
+		}
+		type:
+		{
+			name: free
+			quickr: fr
+			id: 6
+		}
+		type:
+		{
+			name: transport
+			quickr: tp
+			id: 7
+		}
+	}
+}
