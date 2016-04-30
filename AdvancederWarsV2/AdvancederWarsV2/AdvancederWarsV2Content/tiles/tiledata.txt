@@ -259,6 +259,7 @@
 	{
 		Data: 6
 		Name: Road
+		# H, V, TL, TR, BR, BL, TRI, TRR, TRB, TRL, CRO
 		Variants: 11
 		Folder: Road
 		MoveCost:
