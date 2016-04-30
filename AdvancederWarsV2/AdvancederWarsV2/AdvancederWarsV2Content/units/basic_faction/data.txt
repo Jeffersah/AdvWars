@@ -1,0 +1,183 @@
+{
+	inf:
+	{
+		Name: Basic Infantry
+		Description: Basic infantry units who can capture buildings
+		qr: BInf
+		Layer: land
+		Health: 50
+		Weapons:
+		{
+			primary:
+			{
+				Name: Machine Gun
+				Type: Primary
+				Ammo: 6
+				CanCounter: 1
+				Range: 1
+				Layers:
+				{
+					Navy: 1
+					Land: 1
+				}
+				Damage:
+				{
+					un: 25
+					lt: 25
+					tk: 5
+					nv: 5
+					he: -1
+					ai: -1
+					ob: -1
+				}
+			}
+			grenade:
+			{
+				Name: Grenades
+				Type: Primary
+				Ammo: 4
+				CanCounter: 1
+				Range: 1
+				Layers:
+				{
+					Navy: 1
+					Land: 1
+				}
+				Damage:
+				{
+					un: 20
+					lt: 30
+					tk: 10
+					nv: 10
+					he: -1
+					ai: -1
+					ob: -1
+				}
+			}
+		}
+		Move: 6
+		MoveType: in
+		Sight: 5
+		Cost: 100
+		ArmorType: in
+		Abilities:
+		{
+			abi: MOVE
+			abi: ATTACK
+			abi: CAPTURE
+		}
+	}
+	mec:
+	{
+		Name: Mechanized Infantry
+		Description: Stronger, slower infantry who can capture buildings
+		Layer: land
+		Health: 75
+		qr: MInf
+		Weapons:
+		{
+			primary:
+			{
+				Name: Machine Gun
+				Type: Secondary
+				Ammo: 6
+				CanCounter: 1
+				Range: 1
+				Layers:
+				{
+					Navy: 1
+					Land: 1
+				}
+				Damage:
+				{
+					un: 25
+					lt: 25
+					tk: 5
+					nv: 5
+					he: -1
+					ai: -1
+					ob: -1
+				}
+			}
+			missile:
+			{
+				Name: Missiles
+				Type: Primary
+				Ammo: 4
+				CanCounter: 1
+				Range: 1
+				Layers:
+				{
+					Navy: 1
+					Land: 1
+				}
+				Damage:
+				{
+					un: 10
+					lt: 50
+					tk: 50
+					nv: 50
+					he: -1
+					ai: -1
+					ob: -1
+				}
+			}
+		}
+		Move: 3
+		MoveType: in
+		Sight: 4
+		Cost: 150
+		ArmorType: in
+		Abilities:
+		{
+			abi: MOVE
+			abi: ATTACK
+			abi: CAPTURE
+		}
+	}
+	rec:
+	{
+		Name: Recon
+		Description: Fast, light anti-infantry vehicle that can capture buildings
+		Layer: land
+		Health: 75
+		qr: Reco
+		Weapons:
+		{
+			primary:
+			{
+				Name: Machine Gun
+				Type: Primary
+				Ammo: 8
+				CanCounter: 1
+				Range: 1
+				Layers:
+				{
+					Navy: 1
+					Land: 1
+				}
+				Damage:
+				{
+					un: 40
+					lt: 25
+					tk: 5
+					nv: 5
+					he: -1
+					ai: -1
+					ob: -1
+				}
+			}
+		}
+		Move: 10
+		MoveType: ti
+		Sight: 6
+		Cost: 250
+		ArmorType: lt
+		Abilities:
+		{
+			abi: MOVE
+			abi: ATTACK
+			abi: CAPTURE
+		}
+	}
+}
