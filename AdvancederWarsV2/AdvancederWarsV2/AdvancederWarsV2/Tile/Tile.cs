@@ -1,19 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using Microsoft.Xna.Framework;
 using NCodeRiddian;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
 
 namespace AdvancederWarsV2
 {
-    class Tile : TileData
+    internal class Tile : TileData
     {
-        int Map_X;
-        int Map_Y;
-        int Variant;
-        Rectangle drawat;
+        private int Map_X;
+        private int Map_Y;
+        private int Variant;
+        private Rectangle drawat;
 
         public Tile(int x, int y, TileData mydata) : base(mydata)
         {
@@ -22,6 +17,7 @@ namespace AdvancederWarsV2
             Variant = GlobalRandom.random.Next(Variants.Count);
             drawat = new Rectangle(x * Globals.TILE_SIZE, y * Globals.TILE_SIZE, Globals.TILE_SIZE, Globals.TILE_SIZE);
         }
+
         public Tile(int x, int y, int v, TileData mydata) : base(mydata)
         {
             Map_X = x;

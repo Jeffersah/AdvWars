@@ -82,6 +82,7 @@
     <Compile Include="Screen.cs" />
     <Compile Include="Tile\Tile.cs" />
     <Compile Include="Tile\TileData.cs" />
+    <Compile Include="Unit\MoveType.cs" />
     <Compile Include="Unit\UnitData.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -9,7 +9,27 @@ namespace AdvancederWarsV2
 {
     class TileData
     {
+        public static List<TileData> AllTileData;
+
+        public static void Load()
+        {
+            AllTileData = new List<TileData>();
+            foreach(PropertyObject prop in PropertyObject.Load("tiles\\tiledata.txt").GetAllPropertyObjects())
+            {
+                AllTileData.Add(new TileData(prop));
+            }
+        }
+
+        public static TileData ByData(int data)
+        {
+            foreach (TileData td in AllTileData)
+                if (td.data == data)
+                    return td;
+            return null;
+        }
+
         protected string Name;
+        public int data;
 
         protected List<Image> Variants;
 
@@ -20,7 +40,43 @@ namespace AdvancederWarsV2
 
         public TileData(PropertyObject loadfrom)
         {
-
+            Name = loadfrom["Name"].value<string>();
+            int vcount = loadfrom["Variants"].value<int>();
+            data = loadfrom["Data"].value<int>();
+            MoveCosts = new int[MoveType.Count];
+            DefenseModifiers = new float[MoveType.Count];
+            isHidingPlace = new bool[Map.NumberOfLayers()];
+            SightCosts = new int[Map.NumberOfLayers()];
+            foreach (PropertyDefinition definition in loadfrom.GetPropertyObject("MoveCost").GetAllFields())
+            {
+                MoveCosts[MoveType.Lookup(definition.name).Value.id] = definition.value.value<int>();
+            }
+            foreach (PropertyDefinition definition in loadfrom.GetPropertyObject("Def").GetAllFields())
+            {
+                DefenseModifiers[MoveType.Lookup(definition.name).Value.id] = definition.value.value<float>();
+            }
+            foreach (PropertyDefinition definition in loadfrom.GetPropertyObject("Sight").GetAllFields())
+            {
+                for(int i = 0; i < Map.NumberOfLayers(); i++)
+                {
+                    if(definition.name.Equals(Map.GetLayerName(i).ToLower()))
+                    {
+                        SightCosts[i] = definition.value.value<int>();
+                    }
+                }
+            }
+            for (int i = 0; i < isHidingPlace.Length; i++)
+                isHidingPlace[i] = false;
+            foreach (PropertyDefinition definition in loadfrom.GetPropertyObject("Hide").GetAllFields())
+            {
+                for (int i = 0; i < Map.NumberOfLayers(); i++)
+                {
+                    if (definition.name.Equals(Map.GetLayerName(i).ToLower()) && definition.value.value<int>() > 0)
+                    {
+                        isHidingPlace[i] = true;
+                    }
+                }
+            }
         }
 
         public TileData(TileData cloneme)

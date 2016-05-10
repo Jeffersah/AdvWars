@@ -1,0 +1,299 @@
+{
+	# # # # # # # # # # NAVY
+	water:
+	{
+		Data: 0
+		Name: Water
+		Variants: 1
+		Folder: Water
+		MoveCost:
+		{
+			sb: 1
+			nv: 1
+			tp: 1
+			in: -1
+			ti: -1
+			tr: -1
+			la: 1
+			fr: 1
+		}
+		Sight:
+		{
+			sub: 1
+			navy: 1
+			land: 1
+			air: 1
+			missile: 1
+			orbit: 1
+		}
+		Hide:
+		{
+			
+		}
+		Def:
+		{
+			sb: 1
+			nv: 1
+			tp: 1
+			in: -1
+			ti: -1
+			tr: -1
+			la: 1
+			fr: 1
+		}
+	}	
+	mist:
+	{
+		Data: 1
+		Name: Mist
+		Variants: 1
+		Folder: Mist
+		MoveCost:
+		{
+			sb: 1
+			nv: 1
+			tp: 1
+			in: -1
+			ti: -1
+			tr: -1
+			la: 2
+			fr: 1
+		}
+		Sight:
+		{
+			sub: 1
+			navy: 2
+			land: 2
+			air: 2
+			missile: 1
+			orbit: 1
+		}
+		Hide:
+		{
+			sub: 1
+			navy: 1
+			air: 1
+		}
+		Def:
+		{
+			sb: 1
+			nv: 1
+			tp: 1
+			in: -1
+			ti: -1
+			tr: -1
+			la: 1
+			fr: 1
+		}
+	}
+	reef:
+	{
+		Data: 2
+		Name: Reef
+		Variants: 1
+		Folder: Reef
+		MoveCost:
+		{
+			sb: -1
+			nv: 2
+			tp: 2
+			in: -1
+			ti: -1
+			tr: -1
+			la: 1
+			fr: 1
+		}
+		Sight:
+		{
+			sub: 2
+			navy: 2
+			land: 2
+			air: 2
+			missile: 1
+			orbit: 1
+		}
+		Hide:
+		{
+		}
+		Def:
+		{
+			sb: -1
+			nv: .5
+			tp: .5
+			in: -1
+			ti: -1
+			tr: -1
+			la: 1
+			fr: 1
+		}
+	}
+	rough:
+	{
+		Data: 3
+		Name: Rough
+		Variants: 1
+		Folder: Rough
+		MoveCost:
+		{
+			sb: 1
+			nv: 2
+			tp: 3
+			in: -1
+			ti: -1
+			tr: -1
+			la: 1
+			fr: 1
+		}
+		Sight:
+		{
+			sub: 1
+			navy: 1
+			land: 1
+			air: 1
+			missile: 1
+			orbit: 1
+		}
+		Hide:
+		{
+		}
+		Def:
+		{
+			sb: -1
+			nv: 1
+			tp: 1
+			in: -1
+			ti: -1
+			tr: -1
+			la: 1
+			fr: 1
+		}
+	}
+	# # # # # # # # # #
+	# # # # # # # # # #
+	# # # # # # # # # # LAND
+	# # # # # # # # # #
+	# # # # # # # # # #
+	beach:
+	{
+		Data: 4
+		Name: Beach
+		Variants: 8
+		Folder: Beach
+		MoveCost:
+		{
+			sb: -1
+			nv: -1
+			tp: 1
+			in: 2
+			ti: 3
+			tr: 2
+			la: 1
+			fr: 1
+		}
+		Sight:
+		{
+			sub: 1
+			navy: 1
+			land: 1
+			air: 1
+			missile: 1
+			orbit: 1
+		}
+		Hide:
+		{
+		}
+		Def:
+		{
+			sb: -1
+			nv: 1
+			tp: 1
+			in: -1
+			ti: -1
+			tr: -1
+			la: 1
+			fr: 1
+		}
+	}
+	plains:
+	{
+		Data: 5
+		Name: Plains
+		Variants: 1
+		Folder: Plains
+		MoveCost:
+		{
+			sb: -1
+			nv: -1
+			tp: -1
+			in: 2
+			ti: 2
+			tr: 2
+			la: 1
+			fr: 1
+		}
+		Sight:
+		{
+			sub: 1
+			navy: 1
+			land: 1
+			air: 1
+			missile: 1
+			orbit: 1
+		}
+		Hide:
+		{
+		}
+		Def:
+		{
+			sb: -1
+			nv: -1
+			tp: -1
+			in: 1
+			ti: 1
+			tr: 1
+			la: 1
+			fr: 1
+		}
+	}
+	road:
+	{
+		Data: 6
+		Name: Road
+		Variants: 11
+		Folder: Road
+		MoveCost:
+		{
+			sb: -1
+			nv: -1
+			tp: -1
+			in: 1
+			ti: 1
+			tr: 1
+			la: 1
+			fr: 1
+		}
+		Sight:
+		{
+			sub: 1
+			navy: 1
+			land: 1
+			air: 1
+			missile: 1
+			orbit: 1
+		}
+		Hide:
+		{
+		}
+		Def:
+		{
+			sb: -1
+			nv: -1
+			tp: -1
+			in: 1.25
+			ti: 1.25
+			tr: 1.25
+			la: 1
+			fr: 1
+		}
+	}
+}

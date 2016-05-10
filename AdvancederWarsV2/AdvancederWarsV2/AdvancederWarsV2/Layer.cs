@@ -26,7 +26,7 @@ namespace AdvancederWarsV2
 
         public static int NumberOfLayers()
         {
-            return Enum.GetNames(typeof(Layer)).Length;
+            return (int)Layer.ORBIT + 1;
         }
     }
 

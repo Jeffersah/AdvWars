@@ -54,6 +54,9 @@ namespace AdvancederWarsV2
             spriteBatch = new SpriteBatch(GraphicsDevice);
             TextureManager.loadAllImages(Content);
             Camera.setupGenericTexture(GraphicsDevice);
+
+            MoveType.Load(DataLoader.PropertyObject.Load("units\\unitdata.txt").GetPropertyObject("movetypes"));
+            TileData.Load();
             // TODO: use this.Content to load your game content here
         }
 
