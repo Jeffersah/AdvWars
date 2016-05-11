@@ -52,6 +52,7 @@ namespace AdvancederWarsV2
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
+            TextureManager.setDebug(true);
             TextureManager.loadAllImages(Content);
             Camera.setupGenericTexture(GraphicsDevice);
 

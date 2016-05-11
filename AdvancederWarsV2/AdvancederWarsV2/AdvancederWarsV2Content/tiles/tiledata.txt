@@ -178,7 +178,7 @@
 		Data: 4
 		Name: Beach
 		Variants: 12
-		Folder: Beach
+		Folder: Beaches
 		MoveCost:
 		{
 			sb: -1
@@ -259,7 +259,6 @@
 	{
 		Data: 6
 		Name: Road
-		# H, V, TL, TR, BR, BL, TRI, TRR, TRB, TRL, CRO
 		Variants: 11
 		Folder: Road
 		MoveCost:
@@ -426,7 +425,7 @@
 		Data: 10
 		Name: Bridge
 		Variants: 2
-		Folder: Bridge
+		Folder: Bridges
 		MoveCost:
 		{
 			sb: 1
@@ -467,7 +466,7 @@
 		Data: 11
 		Name: Ruins
 		Variants: 1
-		Folder: Ruin
+		Folder: Ruins
 		MoveCost:
 		{
 			sb: -1
@@ -550,7 +549,7 @@
 		Data: 13
 		Name: River
 		Variants: 11
-		Folder: River
+		Folder: Rivers
 		MoveCost:
 		{
 			sb: -1

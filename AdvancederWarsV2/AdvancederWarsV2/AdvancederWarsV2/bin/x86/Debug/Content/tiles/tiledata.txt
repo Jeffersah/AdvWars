@@ -177,8 +177,8 @@
 	{
 		Data: 4
 		Name: Beach
-		Variants: 8
-		Folder: Beach
+		Variants: 12
+		Folder: Beaches
 		MoveCost:
 		{
 			sb: -1
@@ -261,6 +261,336 @@
 		Name: Road
 		Variants: 11
 		Folder: Road
+		MoveCost:
+		{
+			sb: -1
+			nv: -1
+			tp: -1
+			in: 1
+			ti: 1
+			tr: 1
+			la: 1
+			fr: 1
+		}
+		Sight:
+		{
+			sub: 1
+			navy: 1
+			land: 1
+			air: 1
+			missile: 1
+			orbit: 1
+		}
+		Hide:
+		{
+		}
+		Def:
+		{
+			sb: -1
+			nv: -1
+			tp: -1
+			in: 1.25
+			ti: 1.25
+			tr: 1.25
+			la: 1
+			fr: 1
+		}
+	}
+	hills:
+	{
+		Data: 7
+		Name: Hills
+		Variants: 1
+		Folder: Hills
+		MoveCost:
+		{
+			sb: -1
+			nv: -1
+			tp: -1
+			in: 2
+			ti: 3
+			tr: 2
+			la: 1
+			fr: 1
+		}
+		Sight:
+		{
+			sub: 2
+			navy: 2
+			land: 2
+			air: 1
+			missile: 1
+			orbit: 1
+		}
+		Hide:
+		{
+		}
+		Def:
+		{
+			sb: -1
+			nv: -1
+			tp: -1
+			in: .8
+			ti: .8
+			tr: .8
+			la: 1
+			fr: 1
+		}
+	}
+	woods:
+	{
+		Data: 8
+		Name: Woods
+		Variants: 1
+		Folder: Woods
+		MoveCost:
+		{
+			sb: -1
+			nv: -1
+			tp: -1
+			in: 2
+			ti: 4
+			tr: 3
+			la: 1
+			fr: 1
+		}
+		Sight:
+		{
+			sub: 2
+			navy: 2
+			land: 2
+			air: 1
+			missile: 1
+			orbit: 1
+		}
+		Hide:
+		{
+			land: 1
+		}
+		Def:
+		{
+			sb: -1
+			nv: -1
+			tp: -1
+			in: .75
+			ti: .75
+			tr: .75
+			la: 1
+			fr: 1
+		}
+	}
+	mountains:
+	{
+		Data: 9
+		Name: Mountains
+		Variants: 1
+		Folder: Mountain
+		MoveCost:
+		{
+			sb: -1
+			nv: -1
+			tp: -1
+			in: 4
+			ti: -1
+			tr: -1
+			la: 2
+			fr: 1
+		}
+		Sight:
+		{
+			sub: 4
+			navy: 4
+			land: 4
+			air: 2
+			missile: 1
+			orbit: 1
+		}
+		Hide:
+		{
+		}
+		Def:
+		{
+			sb: -1
+			nv: -1
+			tp: -1
+			in: .75
+			ti: -1
+			tr: -1
+			la: .9
+			fr: 1
+		}
+	}
+	bridge:
+	{
+		Data: 10
+		Name: Bridge
+		Variants: 2
+		Folder: Bridges
+		MoveCost:
+		{
+			sb: 1
+			nv: 1
+			tp: 1
+			in: 1
+			ti: 1
+			tr: 1
+			la: 1
+			fr: 1
+		}
+		Sight:
+		{
+			sub: 1
+			navy: 1
+			land: 1
+			air: 1
+			missile: 1
+			orbit: 1
+		}
+		Hide:
+		{
+		}
+		Def:
+		{
+			sb: .8
+			nv: .8
+			tp: .8
+			in: 1.25
+			ti: 1.25
+			tr: 1.25
+			la: 1
+			fr: 1
+		}
+	}
+	ruin:
+	{
+		Data: 11
+		Name: Ruins
+		Variants: 1
+		Folder: Ruins
+		MoveCost:
+		{
+			sb: -1
+			nv: -1
+			tp: -1
+			in: 2
+			ti: 3
+			tr: 2
+			la: 1
+			fr: 1
+		}
+		Sight:
+		{
+			sub: 1
+			navy: 1
+			land: 1
+			air: 1
+			missile: 1
+			orbit: 1
+		}
+		Hide:
+		{
+			land: 1
+		}
+		Def:
+		{
+			sb: -1
+			nv: -1
+			tp: -1
+			in: .6
+			ti: .6
+			tr: .6
+			la: 1
+			fr: 1
+		}
+	}
+	grass:
+	{
+		Data: 12
+		Name: Grass
+		Variants: 1
+		Folder: Grass
+		MoveCost:
+		{
+			sb: -1
+			nv: -1
+			tp: -1
+			in: 2
+			ti: 2
+			tr: 2
+			la: 1
+			fr: 1
+		}
+		Sight:
+		{
+			sub: 2
+			navy: 2
+			land: 2
+			air: 1
+			missile: 1
+			orbit: 1
+		}
+		Hide:
+		{
+		}
+		Def:
+		{
+			sb: -1
+			nv: -1
+			tp: -1
+			in: 1
+			ti: 1
+			tr: 1
+			la: 1
+			fr: 1
+		}
+	}
+	river:
+	{
+		Data: 13
+		Name: River
+		Variants: 11
+		Folder: Rivers
+		MoveCost:
+		{
+			sb: -1
+			nv: -1
+			tp: -1
+			in: 3
+			ti: -1
+			tr: -1
+			la: 1
+			fr: 1
+		}
+		Sight:
+		{
+			sub: 1
+			navy: 1
+			land: 1
+			air: 1
+			missile: 1
+			orbit: 1
+		}
+		Hide:
+		{
+		}
+		Def:
+		{
+			sb: -1
+			nv: -1
+			tp: -1
+			in: 1
+			ti: -1
+			tr: -1
+			la: 1
+			fr: 1
+		}
+	}
+	rvbridge:
+	{
+		Data: 14
+		Name: River Bridge
+		Variants: 2
+		Folder: RVBridge
 		MoveCost:
 		{
 			sb: -1

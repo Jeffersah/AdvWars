@@ -50,4 +50,57 @@
 			id: 7
 		}
 	}
+	armortype:
+	{
+		type:
+		{
+			name: Unarmored
+			quickr: un
+			id: 0
+		}
+		type:
+		{
+			name: Light
+			quickr: lt
+			id: 1
+		}
+		type:
+		{
+			name: Tank
+			quickr: tk
+			id: 2
+		}
+		type:
+		{
+			name: Navy
+			quickr: nv
+			id: 3
+		}
+		type:
+		{
+			name: Helicoptor
+			quickr: he
+			id: 4
+		}
+		type:
+		{
+			name: Air
+			quickr: ai
+			id: 5
+		}
+		type:
+		{
+			name: Orbital
+			quickr: ob
+			id: 6
+		}
+	}
+	factions:
+	{
+		basic:
+		{
+			Name: Basic
+			Folder: basic_faction
+		}
+	}
 }

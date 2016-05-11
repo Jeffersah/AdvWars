@@ -31,7 +31,7 @@ namespace AdvancederWarsV2
         protected string Name;
         public int data;
 
-        protected List<Image> Variants;
+        public List<Image> Variants;
 
         protected int[] MoveCosts;
         protected int[] SightCosts;
@@ -42,6 +42,15 @@ namespace AdvancederWarsV2
         {
             Name = loadfrom["Name"].value<string>();
             int vcount = loadfrom["Variants"].value<int>();
+            string folder = @"tiles\" + loadfrom["Folder"].value<string>();
+            Variants = new List<Image>();
+
+            for(int i = 1; i <= vcount; i++)
+            {
+                string filelocation = folder + "\\" + i;
+                Variants.Add(new Image(filelocation));
+            }
+
             data = loadfrom["Data"].value<int>();
             MoveCosts = new int[MoveType.Count];
             DefenseModifiers = new float[MoveType.Count];
