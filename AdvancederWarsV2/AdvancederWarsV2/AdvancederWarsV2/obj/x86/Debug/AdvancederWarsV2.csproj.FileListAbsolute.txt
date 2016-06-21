@@ -70,3 +70,6 @@ C:\Users\great_000\Documents\git\AdvWars\AdvancederWarsV2\AdvancederWarsV2\Advan
 C:\Users\great_000\Documents\git\AdvWars\AdvancederWarsV2\AdvancederWarsV2\AdvancederWarsV2\bin\x86\Debug\Content\tiles\Plains\1.xnb
 C:\Users\great_000\Documents\git\AdvWars\AdvancederWarsV2\AdvancederWarsV2\AdvancederWarsV2\bin\x86\Debug\Content\tiles\Bridges\2.xnb
 C:\Users\great_000\Documents\git\AdvWars\AdvancederWarsV2\AdvancederWarsV2\AdvancederWarsV2\bin\x86\Debug\Content\tiles\Bridges\1.xnb
+C:\Users\great_000\Documents\git\AdvWars\AdvancederWarsV2\AdvancederWarsV2\AdvancederWarsV2\bin\x86\Debug\Lidgren.Network.dll
+C:\Users\great_000\Documents\git\AdvWars\AdvancederWarsV2\AdvancederWarsV2\AdvancederWarsV2\bin\x86\Debug\Lidgren.Network.pdb
+C:\Users\great_000\Documents\git\AdvWars\AdvancederWarsV2\AdvancederWarsV2\AdvancederWarsV2\bin\x86\Debug\Lidgren.Network.xml

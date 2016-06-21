@@ -41,6 +41,7 @@ namespace AdvancederWarsV2
         {
             // TODO: Add your initialization logic here
             CurrentScreen = new MainMenu();
+            
             base.Initialize();
         }
 
