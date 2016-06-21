@@ -40,7 +40,7 @@ namespace AdvancederWarsV2
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-            CurrentScreen = new InGame();
+            CurrentScreen = new MainMenu();
             base.Initialize();
         }
 

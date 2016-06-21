@@ -111,7 +111,7 @@ namespace AdvancederWarsV2
         
         public Tile MakeTile(int x, int y)
         {
-            return new Tile(x, y, this);
+            return new Tile(x, y, 0, this);
         }
 
         public Tile MakeTile(int x, int y, int v)

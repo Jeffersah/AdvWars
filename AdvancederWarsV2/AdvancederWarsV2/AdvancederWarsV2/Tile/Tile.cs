@@ -27,6 +27,8 @@ namespace AdvancederWarsV2
                 Variant = v;
             }
             image = Data.Variants[v - 1];
+
+            drawat = new Rectangle(Globals.STD_TILE.X * x, Globals.STD_TILE.X * y, Globals.STD_TILE.X, Globals.STD_TILE.X);
         }
     }
 }
